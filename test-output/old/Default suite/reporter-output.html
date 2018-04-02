@@ -1,0 +1,53 @@
+<h2>Reporter output</h2><table><tr><td>Executing querydelete from login
+</td></tr>
+<tr><td>Deleting successfulldelete from login
+</td></tr>
+<tr><td>Made database connection
+</td></tr>
+<tr><td>Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+</td></tr>
+<tr><td>Unsecured user registration successfull
+</td></tr>
+<tr><td>Made database connection
+</td></tr>
+<tr><td>Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+</td></tr>
+<tr><td>Error occured Duplicate entry 'test' for key 'username'
+</td></tr>
+<tr><td>Verifying login with invalid credentials, without any attack
+</td></tr>
+<tr><td>Executig select * from login where username='test1' and password = 'test1'
+</td></tr>
+<tr><td>User not found in database, login failed
+</td></tr>
+<tr><td>Verifying login with tautology attack with input ' OR 1 = 1-- 
+</td></tr>
+<tr><td>Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+</td></tr>
+<tr><td>User found in database,login success
+</td></tr>
+<tr><td>User Details : 
+</td></tr>
+<tr><td>Id : 7 Username test Password test
+</td></tr>
+<tr><td>Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+</td></tr>
+<tr><td>Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+</td></tr>
+<tr><td>User found in database,login success
+</td></tr>
+<tr><td>User Details : 
+</td></tr>
+<tr><td>Id : 7 Username test Password test
+</td></tr>
+<tr><td>Verifying login with valid credentials, without any attack
+</td></tr>
+<tr><td>Executig select * from login where username='test' and password = 'test'
+</td></tr>
+<tr><td>User found in database,login success
+</td></tr>
+<tr><td>User Details : 
+</td></tr>
+<tr><td>Id : 7 Username test Password test
+</td></tr>
+</table>

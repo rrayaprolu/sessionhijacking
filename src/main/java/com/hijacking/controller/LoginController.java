@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.hijacking.algorims.PasswordEncryption;
+import com.hijacking.dao.VerifyLogin;
+import com.hijacking.dao.secured.SecuredVerifyLogin;
+import com.hijacking.util.LogMessage;
 
 /**
  * Servlet implementation class LoginController
@@ -63,12 +66,29 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		LogMessage.logReporter = false;
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 
-		password = PasswordEncryption.md5Password(password);
+		VerifyLogin verifyLogin = new VerifyLogin();
+		try {
+			int result = verifyLogin.verifyLogin(username, password);
+			if (result ==-1) {
+				request.setAttribute("error", "Invalid credentials");
+				LogMessage.logReporter = true;
 
-	
+				request.getRequestDispatcher("/login.jsp").forward(request, response);
+			}
+			
+			else{
+				LogMessage.logReporter = true;
 
+				response.sendRedirect(request.getContextPath() + "/success.jsp");
+
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="36" passed="36">
+  <reporter-output>
+    <line>
+      <![CDATA[Executing querydelete from login
+]]>
+    </line>
+    <line>
+      <![CDATA[Deleting successfulldelete from login
+]]>
+    </line>
+    <line>
+      <![CDATA[Made database connection
+]]>
+    </line>
+    <line>
+      <![CDATA[Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+]]>
+    </line>
+    <line>
+      <![CDATA[Unsecured user registration successfull
+]]>
+    </line>
+    <line>
+      <![CDATA[Made database connection
+]]>
+    </line>
+    <line>
+      <![CDATA[Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+]]>
+    </line>
+    <line>
+      <![CDATA[Error occured Duplicate entry 'test' for key 'username'
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with invalid credentials, without any attack
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = 'test1'
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR ''='
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR ''=''
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 2 > 1 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 2 > 1 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input xx' OR 'x'='x
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = 'xx' OR 'x'='x'
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with valid credentials, without any attack
+]]>
+    </line>
+    <line>
+      <![CDATA[Executig select * from login where username='test' and password = 'test'
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 15 Username test Password test
+]]>
+    </line>
+    <line>
+      <![CDATA[Executing querydelete from login
+]]>
+    </line>
+    <line>
+      <![CDATA[Deleting successfulldelete from login
+]]>
+    </line>
+    <line>
+      <![CDATA[Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+]]>
+    </line>
+    <line>
+      <![CDATA[Login sql select * from login where username='test' and password = 'test'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[User saved in database
+]]>
+    </line>
+    <line>
+      <![CDATA[Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+]]>
+    </line>
+    <line>
+      <![CDATA[Login sql select * from login where username='test' and password = 'test'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[Error in storing in sqlDuplicate entry 'test' for key 'username'
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with invalid credentials, without any attack
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = 'test1'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = 'test1' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1-- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR id between 1 and 100 -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR ''='
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR ''=''
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR ''='' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1 and 1-- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 || 1 = 1-- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 && 1 = 1-- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 2 > 1 -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 2 > 1 -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 2 > 1 -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input xx' OR 'x'='x
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = 'xx' OR 'x'='x'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = 'xx' OR 'x'='x' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- ' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+]]>
+    </line>
+    <line>
+      <![CDATA[User not found in database, login failed
+]]>
+    </line>
+    <line>
+      <![CDATA[Verifying login with valid credentials, without any attack
+]]>
+    </line>
+    <line>
+      <![CDATA[select * from login where username='test' and password = 'test'
+]]>
+    </line>
+    <line>
+      <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+    <line>
+      <![CDATA[User found in database,login success
+]]>
+    </line>
+    <line>
+      <![CDATA[User Details : 
+]]>
+    </line>
+    <line>
+      <![CDATA[Id : 9 Username test Hash 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+    </line>
+  </reporter-output>
+  <suite name="tests" duration-ms="1256" started-at="2018-03-26T22:25:44Z" finished-at="2018-03-26T22:25:45Z">
+    <groups>
+      <group name="securedregistraion">
+        <method signature="UserRegistrationSecuredTest.testRegistraion()[pri:0, instance:com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550]" name="testRegistraion" class="com.hijacking.dao.unsecured.UserRegistrationSecuredTest"/>
+        <method signature="UserRegistrationSecuredTest.testRegistraionSecondTime()[pri:0, instance:com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550]" name="testRegistraionSecondTime" class="com.hijacking.dao.unsecured.UserRegistrationSecuredTest"/>
+      </group> <!-- securedregistraion -->
+      <group name="registraion">
+        <method signature="UserRegistrationTest.testRegistraion()[pri:0, instance:com.hijacking.dao.UserRegistrationTest@4cc0edeb]" name="testRegistraion" class="com.hijacking.dao.UserRegistrationTest"/>
+        <method signature="UserRegistrationTest.testRegistraionSecondTime()[pri:0, instance:com.hijacking.dao.UserRegistrationTest@4cc0edeb]" name="testRegistraionSecondTime" class="com.hijacking.dao.UserRegistrationTest"/>
+      </group> <!-- registraion -->
+    </groups>
+    <test name="Unsecured connections" duration-ms="871" started-at="2018-03-26T22:25:44Z" finished-at="2018-03-26T22:25:45Z">
+      <class name="com.hijacking.dao.VerifyLoginTest">
+        <test-method status="PASS" signature="verifyLoginwithInValidCredentials()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithInValidCredentials" duration-ms="10" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with invalid credentials, without any attack
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = 'test1'
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithInValidCredentials -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack1()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack1" duration-ms="11" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack1 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack10()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack10" duration-ms="7" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack10 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack11()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack11" duration-ms="11" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack11 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack12()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack12" duration-ms="8" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack12 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack13()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack13" duration-ms="6" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack13 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack14()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack14" duration-ms="8" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR ''='
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR ''=''
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack14 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack2()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack2" duration-ms="13" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack2 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack3()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack3" duration-ms="8" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack3 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack4()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack4" duration-ms="9" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack4 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack5()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack5" duration-ms="7" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 2 > 1 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 2 > 1 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack5 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack6()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack6" duration-ms="10" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input xx' OR 'x'='x
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = 'xx' OR 'x'='x'
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack6 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack7()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack7" duration-ms="9" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack7 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack8()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack8" duration-ms="7" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack8 -->
+        <test-method status="PASS" signature="verifyLoginwithTautologyAttack9()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithTautologyAttack9" duration-ms="7" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithTautologyAttack9 -->
+        <test-method status="PASS" signature="verifyLoginwithValidCredentials()[pri:0, instance:com.hijacking.dao.VerifyLoginTest@39aeed2f]" name="verifyLoginwithValidCredentials" duration-ms="7" depends-on-groups="registraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with valid credentials, without any attack
+]]>
+            </line>
+            <line>
+              <![CDATA[Executig select * from login where username='test' and password = 'test'
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 15 Username test Password test
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginwithValidCredentials -->
+      </class> <!-- com.hijacking.dao.VerifyLoginTest -->
+      <class name="com.hijacking.dao.UserRegistrationTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.hijacking.dao.UserRegistrationTest@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="469" started-at="2018-03-26T22:25:44Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing querydelete from login
+]]>
+            </line>
+            <line>
+              <![CDATA[Deleting successfulldelete from login
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="testRegistraion()[pri:0, instance:com.hijacking.dao.UserRegistrationTest@4cc0edeb]" name="testRegistraion" duration-ms="126" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Made database connection
+]]>
+            </line>
+            <line>
+              <![CDATA[Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+]]>
+            </line>
+            <line>
+              <![CDATA[Unsecured user registration successfull
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistraion -->
+        <test-method status="PASS" signature="testRegistraionSecondTime()[pri:0, instance:com.hijacking.dao.UserRegistrationTest@4cc0edeb]" name="testRegistraionSecondTime" duration-ms="92" started-at="2018-03-26T22:25:45Z" depends-on-methods="com.hijacking.dao.UserRegistrationTest.testRegistraion" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Made database connection
+]]>
+            </line>
+            <line>
+              <![CDATA[Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+]]>
+            </line>
+            <line>
+              <![CDATA[Error occured Duplicate entry 'test' for key 'username'
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistraionSecondTime -->
+      </class> <!-- com.hijacking.dao.UserRegistrationTest -->
+    </test> <!-- Unsecured connections -->
+    <test name="Secured connections" duration-ms="353" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+      <class name="com.hijacking.dao.unsecured.SecuredVerifyLoginTest">
+        <test-method status="PASS" signature="verifySecuredLoginwithInValidCredentials()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithInValidCredentials" duration-ms="8" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with invalid credentials, without any attack
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = 'test1'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = 'test1' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithInValidCredentials -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack1()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack1" duration-ms="5" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1-- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack1 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack10()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack10" duration-ms="9" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack10 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack11()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack11" duration-ms="6" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR id between 1 and 100 -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack11 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack12()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack12" duration-ms="8" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack12 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack13()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack13" duration-ms="6" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack13 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack14()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack14" duration-ms="7" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR ''='
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR ''=''
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR ''='' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack14 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack2()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack2" duration-ms="5" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1 and 1-- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack2 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack3()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack3" duration-ms="8" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 || 1 = 1-- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack3 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack4()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack4" duration-ms="6" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 1 && 1 = 1-- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack4 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack5()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack5" duration-ms="6" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 2 > 1 -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 2 > 1 -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 2 > 1 -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack5 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack6()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack6" duration-ms="7" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input xx' OR 'x'='x
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = 'xx' OR 'x'='x'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = 'xx' OR 'x'='x' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack6 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack7()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack7" duration-ms="8" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack7 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack8()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack8" duration-ms="5" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack8 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithTautologyAttack9()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithTautologyAttack9" duration-ms="13" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- ' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+]]>
+            </line>
+            <line>
+              <![CDATA[User not found in database, login failed
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithTautologyAttack9 -->
+        <test-method status="PASS" signature="verifySecuredLoginwithValidCredentials()[pri:0, instance:com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624]" name="verifySecuredLoginwithValidCredentials" duration-ms="6" depends-on-groups="securedregistraion" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verifying login with valid credentials, without any attack
+]]>
+            </line>
+            <line>
+              <![CDATA[select * from login where username='test' and password = 'test'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[User found in database,login success
+]]>
+            </line>
+            <line>
+              <![CDATA[User Details : 
+]]>
+            </line>
+            <line>
+              <![CDATA[Id : 9 Username test Hash 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecuredLoginwithValidCredentials -->
+      </class> <!-- com.hijacking.dao.unsecured.SecuredVerifyLoginTest -->
+      <class name="com.hijacking.dao.unsecured.UserRegistrationSecuredTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550]" name="beforeSuite" is-config="true" duration-ms="51" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing querydelete from login
+]]>
+            </line>
+            <line>
+              <![CDATA[Deleting successfulldelete from login
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="testRegistraion()[pri:0, instance:com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550]" name="testRegistraion" duration-ms="122" started-at="2018-03-26T22:25:45Z" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+]]>
+            </line>
+            <line>
+              <![CDATA[Login sql select * from login where username='test' and password = 'test'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[User saved in database
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistraion -->
+        <test-method status="PASS" signature="testRegistraionSecondTime()[pri:0, instance:com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550]" name="testRegistraionSecondTime" duration-ms="41" started-at="2018-03-26T22:25:45Z" depends-on-methods="com.hijacking.dao.unsecured.UserRegistrationSecuredTest.testRegistraion" finished-at="2018-03-26T22:25:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+]]>
+            </line>
+            <line>
+              <![CDATA[Login sql select * from login where username='test' and password = 'test'
+]]>
+            </line>
+            <line>
+              <![CDATA[Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+]]>
+            </line>
+            <line>
+              <![CDATA[Error in storing in sqlDuplicate entry 'test' for key 'username'
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRegistraionSecondTime -->
+      </class> <!-- com.hijacking.dao.unsecured.UserRegistrationSecuredTest -->
+    </test> <!-- Secured connections -->
+  </suite> <!-- tests -->
+</testng-results>

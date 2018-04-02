@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">tests</th></tr>
+<tr><td><a href="#t0">Unsecured connections</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num">871</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Secured connections</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num">353</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">36</th><th class="num">0</th><th class="num">0</th><th class="num">1,224</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Unsecured connections &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.hijacking.dao.UserRegistrationTest</td><td><a href="#m0">testRegistraion</a></td><td rowspan="1">1522103145228</td><td rowspan="1">126</td></tr><tr class="passedeven"><td><a href="#m1">testRegistraionSecondTime</a></td><td rowspan="1">1522103145358</td><td rowspan="1">92</td></tr><tr class="passedodd"><td rowspan="16">com.hijacking.dao.VerifyLoginTest</td><td><a href="#m2">verifyLoginwithInValidCredentials</a></td><td rowspan="1">1522103145452</td><td rowspan="1">10</td></tr><tr class="passedodd"><td><a href="#m3">verifyLoginwithTautologyAttack1</a></td><td rowspan="1">1522103145463</td><td rowspan="1">11</td></tr><tr class="passedodd"><td><a href="#m4">verifyLoginwithTautologyAttack10</a></td><td rowspan="1">1522103145475</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m5">verifyLoginwithTautologyAttack11</a></td><td rowspan="1">1522103145483</td><td rowspan="1">11</td></tr><tr class="passedodd"><td><a href="#m6">verifyLoginwithTautologyAttack12</a></td><td rowspan="1">1522103145495</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m7">verifyLoginwithTautologyAttack13</a></td><td rowspan="1">1522103145505</td><td rowspan="1">6</td></tr><tr class="passedodd"><td><a href="#m8">verifyLoginwithTautologyAttack14</a></td><td rowspan="1">1522103145512</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m9">verifyLoginwithTautologyAttack2</a></td><td rowspan="1">1522103145523</td><td rowspan="1">13</td></tr><tr class="passedodd"><td><a href="#m10">verifyLoginwithTautologyAttack3</a></td><td rowspan="1">1522103145538</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m11">verifyLoginwithTautologyAttack4</a></td><td rowspan="1">1522103145548</td><td rowspan="1">9</td></tr><tr class="passedodd"><td><a href="#m12">verifyLoginwithTautologyAttack5</a></td><td rowspan="1">1522103145558</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m13">verifyLoginwithTautologyAttack6</a></td><td rowspan="1">1522103145567</td><td rowspan="1">10</td></tr><tr class="passedodd"><td><a href="#m14">verifyLoginwithTautologyAttack7</a></td><td rowspan="1">1522103145578</td><td rowspan="1">9</td></tr><tr class="passedodd"><td><a href="#m15">verifyLoginwithTautologyAttack8</a></td><td rowspan="1">1522103145588</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m16">verifyLoginwithTautologyAttack9</a></td><td rowspan="1">1522103145596</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m17">verifyLoginwithValidCredentials</a></td><td rowspan="1">1522103145606</td><td rowspan="1">7</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Secured connections &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">com.hijacking.dao.unsecured.SecuredVerifyLoginTest</td><td><a href="#m18">verifySecuredLoginwithInValidCredentials</a></td><td rowspan="1">1522103145865</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m19">verifySecuredLoginwithTautologyAttack1</a></td><td rowspan="1">1522103145875</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m20">verifySecuredLoginwithTautologyAttack10</a></td><td rowspan="1">1522103145881</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m21">verifySecuredLoginwithTautologyAttack11</a></td><td rowspan="1">1522103145891</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m22">verifySecuredLoginwithTautologyAttack12</a></td><td rowspan="1">1522103145899</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m23">verifySecuredLoginwithTautologyAttack13</a></td><td rowspan="1">1522103145908</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m24">verifySecuredLoginwithTautologyAttack14</a></td><td rowspan="1">1522103145915</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m25">verifySecuredLoginwithTautologyAttack2</a></td><td rowspan="1">1522103145923</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m26">verifySecuredLoginwithTautologyAttack3</a></td><td rowspan="1">1522103145929</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m27">verifySecuredLoginwithTautologyAttack4</a></td><td rowspan="1">1522103145939</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m28">verifySecuredLoginwithTautologyAttack5</a></td><td rowspan="1">1522103145946</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m29">verifySecuredLoginwithTautologyAttack6</a></td><td rowspan="1">1522103145954</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m30">verifySecuredLoginwithTautologyAttack7</a></td><td rowspan="1">1522103145962</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m31">verifySecuredLoginwithTautologyAttack8</a></td><td rowspan="1">1522103145972</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m32">verifySecuredLoginwithTautologyAttack9</a></td><td rowspan="1">1522103145978</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m33">verifySecuredLoginwithValidCredentials</a></td><td rowspan="1">1522103145992</td><td rowspan="1">6</td></tr><tr class="passedodd"><td rowspan="2">com.hijacking.dao.unsecured.UserRegistrationSecuredTest</td><td><a href="#m34">testRegistraion</a></td><td rowspan="1">1522103145699</td><td rowspan="1">122</td></tr><tr class="passedodd"><td><a href="#m35">testRegistraionSecondTime</a></td><td rowspan="1">1522103145823</td><td rowspan="1">41</td></tr></tbody>
+</table>
+<h2>Unsecured connections</h2><h3 id="m0">com.hijacking.dao.UserRegistrationTest#testRegistraion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Made database connection
+<br/>Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+<br/>Unsecured user registration successfull
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.hijacking.dao.UserRegistrationTest#testRegistraionSecondTime</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Made database connection
+<br/>Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+<br/>Error occured Duplicate entry 'test' for key 'username'
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.hijacking.dao.VerifyLoginTest#verifyLoginwithInValidCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with invalid credentials, without any attack
+<br/>Executig select * from login where username='test1' and password = 'test1'
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack1</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 = 1-- 
+<br/>Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack10</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+<br/>Executig select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack11</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+<br/>Executig select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack12</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+<br/>Executig select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack13</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+<br/>Executig select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack14</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR ''='
+<br/>Executig select * from login where username='test1' and password = '' OR ''=''
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+<br/>Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack3</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+<br/>Executig select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+<br/>Executig select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack5</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 2 > 1 -- 
+<br/>Executig select * from login where username='test1' and password = '' OR 2 > 1 -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack6</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input xx' OR 'x'='x
+<br/>Executig select * from login where username='test1' and password = 'xx' OR 'x'='x'
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack7</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+<br/>Executig select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack8</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+<br/>Executig select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.hijacking.dao.VerifyLoginTest#verifyLoginwithTautologyAttack9</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+<br/>Executig select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.hijacking.dao.VerifyLoginTest#verifyLoginwithValidCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with valid credentials, without any attack
+<br/>Executig select * from login where username='test' and password = 'test'
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 15 Username test Password test
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Secured connections</h2><h3 id="m18">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithInValidCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with invalid credentials, without any attack
+<br/>select * from login where username='test1' and password = 'test1'
+<br/>Calculating hash value for select * from login where username='test1' and password = 'test1' Using SHA-256 
+<br/>Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+<br/>Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack1</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 = 1-- 
+<br/>select * from login where username='test1' and password = '' OR 1 = 1-- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1-- ' Using SHA-256 
+<br/>Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+<br/>Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack10</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+<br/>select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- ' Using SHA-256 
+<br/>Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+<br/>Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack11</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+<br/>select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR id between 1 and 100 -- ' Using SHA-256 
+<br/>Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+<br/>Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack12</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+<br/>select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- ' Using SHA-256 
+<br/>Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+<br/>Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack13</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+<br/>select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- ' Using SHA-256 
+<br/>Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+<br/>Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack14</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR ''='
+<br/>select * from login where username='test1' and password = '' OR ''=''
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR ''='' Using SHA-256 
+<br/>Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+<br/>Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+<br/>select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1 and 1-- ' Using SHA-256 
+<br/>Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+<br/>Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack3</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+<br/>select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 1 || 1 = 1-- ' Using SHA-256 
+<br/>Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+<br/>Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+<br/>select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 1 && 1 = 1-- ' Using SHA-256 
+<br/>Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+<br/>Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack5</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 2 > 1 -- 
+<br/>select * from login where username='test1' and password = '' OR 2 > 1 -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 2 > 1 -- ' Using SHA-256 
+<br/>Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+<br/>Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack6</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input xx' OR 'x'='x
+<br/>select * from login where username='test1' and password = 'xx' OR 'x'='x'
+<br/>Calculating hash value for select * from login where username='test1' and password = 'xx' OR 'x'='x' Using SHA-256 
+<br/>Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+<br/>Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack7</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+<br/>select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D' Using SHA-256 
+<br/>Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+<br/>Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack8</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+<br/>select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- ' Using SHA-256 
+<br/>Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+<br/>Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithTautologyAttack9</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+<br/>select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+<br/>Calculating hash value for select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- ' Using SHA-256 
+<br/>Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+<br/>Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+<br/>User not found in database, login failed
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.hijacking.dao.unsecured.SecuredVerifyLoginTest#verifySecuredLoginwithValidCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verifying login with valid credentials, without any attack
+<br/>select * from login where username='test' and password = 'test'
+<br/>Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>User found in database,login success
+<br/>User Details : 
+<br/>Id : 9 Username test Hash 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.hijacking.dao.unsecured.UserRegistrationSecuredTest#testRegistraion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+<br/>Login sql select * from login where username='test' and password = 'test'
+<br/>Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>User saved in database
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.hijacking.dao.unsecured.UserRegistrationSecuredTest#testRegistraionSecondTime</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+<br/>Login sql select * from login where username='test' and password = 'test'
+<br/>Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>Error in storing in sqlDuplicate entry 'test' for key 'username'
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

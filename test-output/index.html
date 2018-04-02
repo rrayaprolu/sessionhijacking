@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-tests">
+              <span class="suite-name border-passed">tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-tests">
+                    <span>E:\Oldcomputer\E\pradeepwork\raviteja\sqlandsession\src\test\resources\testngsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-tests">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-tests">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">36 methods,   36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-tests" class="hide-methods passed suite-tests"> (hide)</a> <!-- hide-methods passed suite-tests -->
+                      <a href="#" panel-name="suite-tests" class="show-methods passed suite-tests"> (show)</a> <!-- show-methods passed suite-tests -->
+                    </span>
+                    <div class="method-list-content passed suite-tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.UserRegistrationTest" hash-for-method="testRegistraion">testRegistraion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.UserRegistrationSecuredTest" hash-for-method="testRegistraion">testRegistraion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.UserRegistrationTest" hash-for-method="testRegistraionSecondTime">testRegistraionSecondTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.UserRegistrationSecuredTest" hash-for-method="testRegistraionSecondTime">testRegistraionSecondTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithInValidCredentials">verifyLoginwithInValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack1">verifyLoginwithTautologyAttack1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack10">verifyLoginwithTautologyAttack10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack11">verifyLoginwithTautologyAttack11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack12">verifyLoginwithTautologyAttack12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack13">verifyLoginwithTautologyAttack13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack14">verifyLoginwithTautologyAttack14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack2">verifyLoginwithTautologyAttack2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack3">verifyLoginwithTautologyAttack3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack4">verifyLoginwithTautologyAttack4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack5">verifyLoginwithTautologyAttack5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack6">verifyLoginwithTautologyAttack6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack7">verifyLoginwithTautologyAttack7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack8">verifyLoginwithTautologyAttack8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithTautologyAttack9">verifyLoginwithTautologyAttack9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.VerifyLoginTest" hash-for-method="verifyLoginwithValidCredentials">verifyLoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithInValidCredentials">verifySecuredLoginwithInValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack1">verifySecuredLoginwithTautologyAttack1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack10">verifySecuredLoginwithTautologyAttack10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack11">verifySecuredLoginwithTautologyAttack11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack12">verifySecuredLoginwithTautologyAttack12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack13">verifySecuredLoginwithTautologyAttack13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack14">verifySecuredLoginwithTautologyAttack14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack2">verifySecuredLoginwithTautologyAttack2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack3">verifySecuredLoginwithTautologyAttack3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack4">verifySecuredLoginwithTautologyAttack4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack5">verifySecuredLoginwithTautologyAttack5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack6">verifySecuredLoginwithTautologyAttack6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack7">verifySecuredLoginwithTautologyAttack7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack8">verifySecuredLoginwithTautologyAttack8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithTautologyAttack9">verifySecuredLoginwithTautologyAttack9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.hijacking.dao.unsecured.SecuredVerifyLoginTest" hash-for-method="verifySecuredLoginwithValidCredentials">verifySecuredLoginwithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-tests" class="panel tests">
+          <div class="suite-tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hijacking.dao.unsecured.SecuredVerifyLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithInValidCredentials">
+                  </a> <!-- verifySecuredLoginwithInValidCredentials -->
+                  <span class="method-name">verifySecuredLoginwithInValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack1">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack1 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack10">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack10 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack11">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack11 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack12">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack12 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack13">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack13 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack14">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack14 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack2">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack2 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack3">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack3 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack4">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack4 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack5">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack5 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack6">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack6 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack7">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack7 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack8">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack8 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithTautologyAttack9">
+                  </a> <!-- verifySecuredLoginwithTautologyAttack9 -->
+                  <span class="method-name">verifySecuredLoginwithTautologyAttack9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySecuredLoginwithValidCredentials">
+                  </a> <!-- verifySecuredLoginwithValidCredentials -->
+                  <span class="method-name">verifySecuredLoginwithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests-class-passed -->
+          <div class="suite-tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hijacking.dao.UserRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistraion">
+                  </a> <!-- testRegistraion -->
+                  <span class="method-name">testRegistraion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistraionSecondTime">
+                  </a> <!-- testRegistraionSecondTime -->
+                  <span class="method-name">testRegistraionSecondTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests-class-passed -->
+          <div class="suite-tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hijacking.dao.VerifyLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithInValidCredentials">
+                  </a> <!-- verifyLoginwithInValidCredentials -->
+                  <span class="method-name">verifyLoginwithInValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack1">
+                  </a> <!-- verifyLoginwithTautologyAttack1 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack10">
+                  </a> <!-- verifyLoginwithTautologyAttack10 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack11">
+                  </a> <!-- verifyLoginwithTautologyAttack11 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack12">
+                  </a> <!-- verifyLoginwithTautologyAttack12 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack13">
+                  </a> <!-- verifyLoginwithTautologyAttack13 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack14">
+                  </a> <!-- verifyLoginwithTautologyAttack14 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack2">
+                  </a> <!-- verifyLoginwithTautologyAttack2 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack3">
+                  </a> <!-- verifyLoginwithTautologyAttack3 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack4">
+                  </a> <!-- verifyLoginwithTautologyAttack4 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack5">
+                  </a> <!-- verifyLoginwithTautologyAttack5 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack6">
+                  </a> <!-- verifyLoginwithTautologyAttack6 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack7">
+                  </a> <!-- verifyLoginwithTautologyAttack7 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack8">
+                  </a> <!-- verifyLoginwithTautologyAttack8 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithTautologyAttack9">
+                  </a> <!-- verifyLoginwithTautologyAttack9 -->
+                  <span class="method-name">verifyLoginwithTautologyAttack9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginwithValidCredentials">
+                  </a> <!-- verifyLoginwithValidCredentials -->
+                  <span class="method-name">verifyLoginwithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests-class-passed -->
+          <div class="suite-tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hijacking.dao.unsecured.UserRegistrationSecuredTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistraion">
+                  </a> <!-- testRegistraion -->
+                  <span class="method-name">testRegistraion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistraionSecondTime">
+                  </a> <!-- testRegistraionSecondTime -->
+                  <span class="method-name">testRegistraionSecondTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests-class-passed -->
+        </div> <!-- panel tests -->
+        <div panel-name="test-xml-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Oldcomputer\E\pradeepwork\raviteja\sqlandsession\src\test\resources\testngsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;tests&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Unsecured connections&quot; parallel=&quot;tests&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.hijacking.dao&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hijacking.dao.UserRegistrationTest&quot;/&gt;
+      &lt;class name=&quot;com.hijacking.dao.VerifyLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.hijacking.dao.DBConnection&quot;/&gt;
+      &lt;class name=&quot;com.hijacking.dao.UserRegistration&quot;/&gt;
+      &lt;class name=&quot;com.hijacking.dao.VerifyLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Unsecured connections --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Secured connections&quot; parallel=&quot;tests&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.hijacking.dao.unsecured&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hijacking.dao.unsecured.SecuredVerifyLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.hijacking.dao.unsecured.UserRegistrationSecuredTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Secured connections --&gt;
+&lt;/suite&gt; &lt;!-- tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Unsecured connections (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Secured connections (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">registraion</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegistraion</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegistraionSecondTime</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">securedregistraion</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegistraion</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegistraionSecondTime</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_tests');
+function tableData_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(36);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testRegistraion')
+data.setCell(0, 2, 'com.hijacking.dao.UserRegistrationTest')
+data.setCell(0, 3, 126);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testRegistraion')
+data.setCell(1, 2, 'com.hijacking.dao.unsecured.UserRegistrationSecuredTest')
+data.setCell(1, 3, 122);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testRegistraionSecondTime')
+data.setCell(2, 2, 'com.hijacking.dao.UserRegistrationTest')
+data.setCell(2, 3, 92);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testRegistraionSecondTime')
+data.setCell(3, 2, 'com.hijacking.dao.unsecured.UserRegistrationSecuredTest')
+data.setCell(3, 3, 41);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginwithTautologyAttack2')
+data.setCell(4, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(4, 3, 13);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySecuredLoginwithTautologyAttack9')
+data.setCell(5, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(5, 3, 13);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginwithTautologyAttack11')
+data.setCell(6, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(6, 3, 11);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginwithTautologyAttack1')
+data.setCell(7, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(7, 3, 11);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginwithTautologyAttack6')
+data.setCell(8, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(8, 3, 10);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoginwithInValidCredentials')
+data.setCell(9, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(9, 3, 10);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginwithTautologyAttack4')
+data.setCell(10, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(10, 3, 9);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLoginwithTautologyAttack7')
+data.setCell(11, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(11, 3, 9);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifySecuredLoginwithTautologyAttack10')
+data.setCell(12, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(12, 3, 9);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLoginwithTautologyAttack12')
+data.setCell(13, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(13, 3, 8);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLoginwithTautologyAttack14')
+data.setCell(14, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(14, 3, 8);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLoginwithTautologyAttack3')
+data.setCell(15, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(15, 3, 8);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifySecuredLoginwithInValidCredentials')
+data.setCell(16, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(16, 3, 8);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifySecuredLoginwithTautologyAttack7')
+data.setCell(17, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(17, 3, 8);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifySecuredLoginwithTautologyAttack3')
+data.setCell(18, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(18, 3, 8);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifySecuredLoginwithTautologyAttack12')
+data.setCell(19, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(19, 3, 8);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyLoginwithTautologyAttack10')
+data.setCell(20, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(20, 3, 7);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyLoginwithValidCredentials')
+data.setCell(21, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(21, 3, 7);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyLoginwithTautologyAttack9')
+data.setCell(22, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(22, 3, 7);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyLoginwithTautologyAttack8')
+data.setCell(23, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(23, 3, 7);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyLoginwithTautologyAttack5')
+data.setCell(24, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(24, 3, 7);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifySecuredLoginwithTautologyAttack14')
+data.setCell(25, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(25, 3, 7);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifySecuredLoginwithTautologyAttack6')
+data.setCell(26, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(26, 3, 7);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyLoginwithTautologyAttack13')
+data.setCell(27, 2, 'com.hijacking.dao.VerifyLoginTest')
+data.setCell(27, 3, 6);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifySecuredLoginwithValidCredentials')
+data.setCell(28, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(28, 3, 6);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifySecuredLoginwithTautologyAttack5')
+data.setCell(29, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(29, 3, 6);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifySecuredLoginwithTautologyAttack4')
+data.setCell(30, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(30, 3, 6);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifySecuredLoginwithTautologyAttack13')
+data.setCell(31, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(31, 3, 6);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifySecuredLoginwithTautologyAttack11')
+data.setCell(32, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(32, 3, 6);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifySecuredLoginwithTautologyAttack2')
+data.setCell(33, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(33, 3, 5);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifySecuredLoginwithTautologyAttack1')
+data.setCell(34, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(34, 3, 5);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifySecuredLoginwithTautologyAttack8')
+data.setCell(35, 2, 'com.hijacking.dao.unsecured.SecuredVerifyLoginTest')
+data.setCell(35, 3, 5);
+window.suiteTableData['tests']= { tableData: data, tableDiv: 'times-div-tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 632 ms</span>
+              <div id="times-div-tests">
+              </div> <!-- times-div-tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack4</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRegistraionSecondTime</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Made database connection
+</span>
+                <span class="reporter-method-output">Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+</span>
+                <span class="reporter-method-output">Error occured Duplicate entry 'test' for key 'username'
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack10</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack12</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRegistraion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Made database connection
+</span>
+                <span class="reporter-method-output">Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+</span>
+                <span class="reporter-method-output">Unsecured user registration successfull
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with valid credentials, without any attack
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test' and password = 'test'
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack9</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack6</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input xx' OR 'x'='x
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = 'xx' OR 'x'='x'
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack11</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack14</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR ''='
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR ''=''
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack8</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack13</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 = 1-- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack7</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack5</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 2 > 1 -- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 2 > 1 -- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithTautologyAttack3</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 15 Username test Password test
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginwithInValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with invalid credentials, without any attack
+</span>
+                <span class="reporter-method-output">Executig select * from login where username='test1' and password = 'test1'
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithInValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with invalid credentials, without any attack
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = 'test1'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = 'test1' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+</span>
+                <span class="reporter-method-output">Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1 and 1-- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+</span>
+                <span class="reporter-method-output">Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack7</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+</span>
+                <span class="reporter-method-output">Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 = 1-- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 1 = 1-- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1-- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+</span>
+                <span class="reporter-method-output">Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with valid credentials, without any attack
+</span>
+                <span class="reporter-method-output">select * from login where username='test' and password = 'test'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">User found in database,login success
+</span>
+                <span class="reporter-method-output">User Details : 
+</span>
+                <span class="reporter-method-output">Id : 9 Username test Hash 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRegistraion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+</span>
+                <span class="reporter-method-output">Login sql select * from login where username='test' and password = 'test'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">User saved in database
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack8</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+</span>
+                <span class="reporter-method-output">Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack9</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+</span>
+                <span class="reporter-method-output">Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack5</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 2 > 1 -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 2 > 1 -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 2 > 1 -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+</span>
+                <span class="reporter-method-output">Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRegistraionSecondTime</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+</span>
+                <span class="reporter-method-output">Login sql select * from login where username='test' and password = 'test'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+</span>
+                <span class="reporter-method-output">Error in storing in sqlDuplicate entry 'test' for key 'username'
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack4</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 1 && 1 = 1-- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+</span>
+                <span class="reporter-method-output">Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack10</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+</span>
+                <span class="reporter-method-output">Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack3</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR 1 || 1 = 1-- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+</span>
+                <span class="reporter-method-output">Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack13</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+</span>
+                <span class="reporter-method-output">Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack11</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR id between 1 and 100 -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+</span>
+                <span class="reporter-method-output">Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack14</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input ' OR ''='
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '' OR ''=''
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '' OR ''='' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+</span>
+                <span class="reporter-method-output">Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack12</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- ' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+</span>
+                <span class="reporter-method-output">Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySecuredLoginwithTautologyAttack6</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verifying login with tautology attack with input xx' OR 'x'='x
+</span>
+                <span class="reporter-method-output">select * from login where username='test1' and password = 'xx' OR 'x'='x'
+</span>
+                <span class="reporter-method-output">Calculating hash value for select * from login where username='test1' and password = 'xx' OR 'x'='x' Using SHA-256 
+</span>
+                <span class="reporter-method-output">Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+</span>
+                <span class="reporter-method-output">Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+</span>
+                <span class="reporter-method-output">User not found in database, login failed
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hijacking.dao.UserRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testRegistraion</span>
+                <span class="method-start">475 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistraionSecondTime</span>
+                <span class="method-start">605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hijacking.dao.VerifyLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithInValidCredentials</span>
+                <span class="method-start">699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack1</span>
+                <span class="method-start">710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack10</span>
+                <span class="method-start">722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack11</span>
+                <span class="method-start">730 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack12</span>
+                <span class="method-start">742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack13</span>
+                <span class="method-start">752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack14</span>
+                <span class="method-start">759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack2</span>
+                <span class="method-start">770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack3</span>
+                <span class="method-start">785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack4</span>
+                <span class="method-start">795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack5</span>
+                <span class="method-start">805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack6</span>
+                <span class="method-start">814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack7</span>
+                <span class="method-start">825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack8</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithTautologyAttack9</span>
+                <span class="method-start">843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginwithValidCredentials</span>
+                <span class="method-start">853 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hijacking.dao.unsecured.UserRegistrationSecuredTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">894 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testRegistraion</span>
+                <span class="method-start">946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistraionSecondTime</span>
+                <span class="method-start">1070 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hijacking.dao.unsecured.SecuredVerifyLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithInValidCredentials</span>
+                <span class="method-start">1112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack1</span>
+                <span class="method-start">1122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack10</span>
+                <span class="method-start">1128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack11</span>
+                <span class="method-start">1138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack12</span>
+                <span class="method-start">1146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack13</span>
+                <span class="method-start">1155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack14</span>
+                <span class="method-start">1162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack2</span>
+                <span class="method-start">1170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack3</span>
+                <span class="method-start">1176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack4</span>
+                <span class="method-start">1186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack5</span>
+                <span class="method-start">1193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack6</span>
+                <span class="method-start">1201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack7</span>
+                <span class="method-start">1209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack8</span>
+                <span class="method-start">1219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithTautologyAttack9</span>
+                <span class="method-start">1225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySecuredLoginwithValidCredentials</span>
+                <span class="method-start">1239 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

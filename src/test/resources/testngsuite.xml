@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" parallel="tests" thread-count="1">
+
+	<test name="Unsecured connections">
+		<packages>
+			<package name="com.hijacking.dao" />
+		</packages>
+	</test>
+
+	<test name="Secured connections">
+		<packages>
+			<package name="com.hijacking.dao.unsecured" />
+		</packages>
+	</test>
+
+</suite>

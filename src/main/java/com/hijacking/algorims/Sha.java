@@ -3,9 +3,13 @@ package com.hijacking.algorims;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import com.hijacking.util.LogMessage;
+
 public class Sha {
 
-	public String calculateHash(String password) {
+	public static String calculateHash(String password) {
+		
+		LogMessage.logMessage("Calculating hash value for "+password+" Using SHA-256 ");
 		MessageDigest md = null;
 		try {
 			md = MessageDigest.getInstance("SHA-256");
@@ -23,7 +27,7 @@ public class Sha {
 			sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
 		}
 
-		System.out.println("Hex format : " + sb.toString());
+		LogMessage.logMessage("Hex format : " + sb.toString());
 
 		// convert the byte to hex format method 2
 		StringBuffer hexString = new StringBuffer();
@@ -33,7 +37,7 @@ public class Sha {
 				hexString.append('0');
 			hexString.append(hex);
 		}
-		System.out.println("Hex format : " + hexString.toString());
+		LogMessage.logMessage("Hex format : " + hexString.toString());
 		return hexString.toString();
 	}
 }

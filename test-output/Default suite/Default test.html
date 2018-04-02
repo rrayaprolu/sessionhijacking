@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 27 03:39:42 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (473 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hijacking.dao.UserRegistrationTest.testRegistraion()'><b>testRegistraion</b><br>Test class: com.hijacking.dao.UserRegistrationTest<br/>
+<a href="#Output-852687460" onClick='toggleBox("Output-852687460", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-852687460" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-852687460">
+Made database connection
+<br/>
+Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+<br/>
+Unsecured user registration successfull
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.UserRegistrationTest@1753acfe</td></tr>
+<tr>
+<td title='com.hijacking.dao.UserRegistrationTest.testRegistraionSecondTime()'><b>testRegistraionSecondTime</b><br>Test class: com.hijacking.dao.UserRegistrationTest<br/>
+<a href="#Output-2056418216" onClick='toggleBox("Output-2056418216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2056418216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2056418216">
+Made database connection
+<br/>
+Executing queryINSERT INTO login(name, username, password) VALUES(?,?,?)
+<br/>
+Error occured Duplicate entry 'test' for key 'username'
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.UserRegistrationTest@1753acfe</td></tr>
+<tr>
+<td title='com.hijacking.dao.VerifyLoginTest.verifyLoginwithInValidCredentials()'><b>verifyLoginwithInValidCredentials</b><br>Test class: com.hijacking.dao.VerifyLoginTest<br/>
+<a href="#Output-331510866" onClick='toggleBox("Output-331510866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-331510866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-331510866">
+Verifying login with invalid credentials, without any attack
+<br/>
+Executig select * from login where username='test1' and password = 'test1'
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.VerifyLoginTest@548a9f61</td></tr>
+<tr>
+<td title='com.hijacking.dao.VerifyLoginTest.verifyLoginwithTautologyAttack1()'><b>verifyLoginwithTautologyAttack1</b><br>Test class: com.hijacking.dao.VerifyLoginTest<br/>
+<a href="#Output-511473681" onClick='toggleBox("Output-511473681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-511473681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-511473681">
+Verifying login with tautology attack with input ' OR 1 = 1-- 
+<br/>
+Executig select * from login where username='test1' and password = '' OR 1 = 1-- '
+<br/>
+User found in database,login success
+<br/>
+User Details : 
+<br/>
+Id : 7 Username test Password test
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.VerifyLoginTest@548a9f61</td></tr>
+<tr>
+<td title='com.hijacking.dao.VerifyLoginTest.verifyLoginwithTautologyAttack2()'><b>verifyLoginwithTautologyAttack2</b><br>Test class: com.hijacking.dao.VerifyLoginTest<br/>
+<a href="#Output-1990451863" onClick='toggleBox("Output-1990451863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990451863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990451863">
+Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+<br/>
+Executig select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+<br/>
+User found in database,login success
+<br/>
+User Details : 
+<br/>
+Id : 7 Username test Password test
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.VerifyLoginTest@548a9f61</td></tr>
+<tr>
+<td title='com.hijacking.dao.VerifyLoginTest.verifyLoginwithValidCredentials()'><b>verifyLoginwithValidCredentials</b><br>Test class: com.hijacking.dao.VerifyLoginTest<br/>
+<a href="#Output-1320677379" onClick='toggleBox("Output-1320677379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1320677379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1320677379">
+Verifying login with valid credentials, without any attack
+<br/>
+Executig select * from login where username='test' and password = 'test'
+<br/>
+User found in database,login success
+<br/>
+User Details : 
+<br/>
+Id : 7 Username test Password test
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.VerifyLoginTest@548a9f61</td></tr>
+</table><p>
+</body>
+</html>
