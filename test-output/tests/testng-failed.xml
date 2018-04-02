@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [tests]" parallel="tests">
+  <test thread-count="1" name="Secured connections(failed)" parallel="tests">
+    <classes>
+      <class name="com.hijacking.dao.unsecured.SecuredVerifyLoginTest">
+        <methods>
+          <include name="verifySecuredLoginwithTautologyAttack2"/>
+          <include name="verifySecuredLoginwithTautologyAttack14"/>
+          <include name="verifySecuredLoginwithTautologyAttack3"/>
+          <include name="verifySecuredLoginwithTautologyAttack1"/>
+          <include name="verifySecuredLoginwithValidCredentials"/>
+          <include name="verifySecuredLoginwithTautologyAttack4"/>
+          <include name="verifySecuredLoginwithTautologyAttack13"/>
+          <include name="verifySecuredLoginwithTautologyAttack10"/>
+          <include name="verifySecuredLoginwithTautologyAttack11"/>
+          <include name="verifySecuredLoginwithTautologyAttack12"/>
+          <include name="verifySecuredLoginwithTautologyAttack8"/>
+          <include name="verifySecuredLoginwithInValidCredentials"/>
+          <include name="verifySecuredLoginwithTautologyAttack9"/>
+          <include name="verifySecuredLoginwithTautologyAttack6"/>
+          <include name="verifySecuredLoginwithTautologyAttack7"/>
+          <include name="verifySecuredLoginwithTautologyAttack5"/>
+        </methods>
+      </class> <!-- com.hijacking.dao.unsecured.SecuredVerifyLoginTest -->
+      <class name="com.hijacking.dao.unsecured.UserRegistrationSecuredTest">
+        <methods>
+          <include name="testRegistraionSecondTime"/>
+          <include name="testRegistraion"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.hijacking.dao.unsecured.UserRegistrationSecuredTest -->
+    </classes>
+  </test> <!-- Secured connections(failed) -->
+</suite> <!-- Failed suite [tests] -->

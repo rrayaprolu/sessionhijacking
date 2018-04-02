@@ -1,0 +1,497 @@
+<html>
+<head>
+<title>TestNG:  Secured connections</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Secured connections</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 27 03:55:45 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (353 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.UserRegistrationSecuredTest.testRegistraion()'><b>testRegistraion</b><br>Test class: com.hijacking.dao.unsecured.UserRegistrationSecuredTest<br/>
+<a href="#Output-1816301323" onClick='toggleBox("Output-1816301323", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1816301323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816301323">
+Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+<br/>
+Login sql select * from login where username='test' and password = 'test'
+<br/>
+Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+User saved in database
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.UserRegistrationSecuredTest.testRegistraionSecondTime()'><b>testRegistraionSecondTime</b><br>Test class: com.hijacking.dao.unsecured.UserRegistrationSecuredTest<br/>
+<a href="#Output-2079994007" onClick='toggleBox("Output-2079994007", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2079994007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2079994007">
+Executing sql INSERT INTO login(name, username, hash) VALUES(?,?,?)
+<br/>
+Login sql select * from login where username='test' and password = 'test'
+<br/>
+Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+Error in storing in sqlDuplicate entry 'test' for key 'username'
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.UserRegistrationSecuredTest@5c3bd550</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithInValidCredentials()'><b>verifySecuredLoginwithInValidCredentials</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1485121344" onClick='toggleBox("Output-1485121344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1485121344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1485121344">
+Verifying login with invalid credentials, without any attack
+<br/>
+select * from login where username='test1' and password = 'test1'
+<br/>
+Calculating hash value for select * from login where username='test1' and password = 'test1' Using SHA-256 
+<br/>
+Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+<br/>
+Hex format : 03d0dac3d8e5c14e31a0eb70d61c5a70e87f72643968c655aaeac7580ab9eedd
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack1()'><b>verifySecuredLoginwithTautologyAttack1</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-115407335" onClick='toggleBox("Output-115407335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-115407335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-115407335">
+Verifying login with tautology attack with input ' OR 1 = 1-- 
+<br/>
+select * from login where username='test1' and password = '' OR 1 = 1-- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1-- ' Using SHA-256 
+<br/>
+Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+<br/>
+Hex format : b79c889d46099b5cf6d26471785e283084fde8089fde15a9cf5e6e39dd87cca3
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack10()'><b>verifySecuredLoginwithTautologyAttack10</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-238213602" onClick='toggleBox("Output-238213602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238213602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238213602">
+Verifying login with tautology attack with input ' OR 10 between 1 and 100 -- 
+<br/>
+select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 10 between 1 and 100 -- ' Using SHA-256 
+<br/>
+Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+<br/>
+Hex format : 2fcc8d8418a9918158b3bc59e8bea6a4c5864c78b02acd21d3bea68e8f407c12
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack11()'><b>verifySecuredLoginwithTautologyAttack11</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-253420655" onClick='toggleBox("Output-253420655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253420655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253420655">
+Verifying login with tautology attack with input ' OR id between 1 and 100 -- 
+<br/>
+select * from login where username='test1' and password = '' OR id between 1 and 100 -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR id between 1 and 100 -- ' Using SHA-256 
+<br/>
+Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+<br/>
+Hex format : 5e17b545aa5d69fbc117eae1ff0cde36bbb1cf8eb812ccd6b199a20fef82ff51
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack12()'><b>verifySecuredLoginwithTautologyAttack12</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1261590313" onClick='toggleBox("Output-1261590313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261590313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261590313">
+Verifying login with tautology attack with input %00' OR id between 1 and 100 -- 
+<br/>
+select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '%00' OR id between 1 and 100 -- ' Using SHA-256 
+<br/>
+Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+<br/>
+Hex format : ee069c784862ed604a98748ff86824a8f0f323d2bef4c0ca923b8c7d7edeaf33
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack13()'><b>verifySecuredLoginwithTautologyAttack13</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1744881458" onClick='toggleBox("Output-1744881458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744881458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744881458">
+Verifying login with tautology attack with input ' or ASCII(SUBSTRING('a',1,1))=97 -- 
+<br/>
+select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' or ASCII(SUBSTRING('a',1,1))=97 -- ' Using SHA-256 
+<br/>
+Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+<br/>
+Hex format : 28f537b15df797fac93d5971861748b0a7ea24ca13c38b0976c33157641a6e4f
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack14()'><b>verifySecuredLoginwithTautologyAttack14</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1719614438" onClick='toggleBox("Output-1719614438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1719614438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1719614438">
+Verifying login with tautology attack with input ' OR ''='
+<br/>
+select * from login where username='test1' and password = '' OR ''=''
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR ''='' Using SHA-256 
+<br/>
+Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+<br/>
+Hex format : b03ff99ba01a0c116340162c81f3b929998b4a80cb81df7e25f8dd6848caa9c2
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack2()'><b>verifySecuredLoginwithTautologyAttack2</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1939962116" onClick='toggleBox("Output-1939962116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1939962116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1939962116">
+Verifying login with tautology attack with input ' OR 1 = 1 and 1-- 
+<br/>
+select * from login where username='test1' and password = '' OR 1 = 1 and 1-- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 1 = 1 and 1-- ' Using SHA-256 
+<br/>
+Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+<br/>
+Hex format : 4f192c128e29876c8b758d7dc47722fd4679d4d262a8785d60a41814622e0300
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack3()'><b>verifySecuredLoginwithTautologyAttack3</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1809317766" onClick='toggleBox("Output-1809317766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1809317766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1809317766">
+Verifying login with tautology attack with input ' OR 1 || 1 = 1-- 
+<br/>
+select * from login where username='test1' and password = '' OR 1 || 1 = 1-- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 1 || 1 = 1-- ' Using SHA-256 
+<br/>
+Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+<br/>
+Hex format : 964fa19d9b0567df3bbca593bbf82d1111bfc591fe1f57bcff1bf544222ed1be
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack4()'><b>verifySecuredLoginwithTautologyAttack4</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-459638058" onClick='toggleBox("Output-459638058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-459638058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-459638058">
+Verifying login with tautology attack with input ' OR 1 && 1 = 1-- 
+<br/>
+select * from login where username='test1' and password = '' OR 1 && 1 = 1-- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 1 && 1 = 1-- ' Using SHA-256 
+<br/>
+Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+<br/>
+Hex format : 6ea1929bc2a8d8746b7369037e5eae59822d2235f4e0cd6e9c749701afe0da63
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack5()'><b>verifySecuredLoginwithTautologyAttack5</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1435740639" onClick='toggleBox("Output-1435740639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1435740639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1435740639">
+Verifying login with tautology attack with input ' OR 2 > 1 -- 
+<br/>
+select * from login where username='test1' and password = '' OR 2 > 1 -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 2 > 1 -- ' Using SHA-256 
+<br/>
+Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+<br/>
+Hex format : 284bd467cd2dbfd805a82dddbe2f38c7935bc2372e06e54dac453ad2e2093153
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack6()'><b>verifySecuredLoginwithTautologyAttack6</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1906783992" onClick='toggleBox("Output-1906783992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1906783992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1906783992">
+Verifying login with tautology attack with input xx' OR 'x'='x
+<br/>
+select * from login where username='test1' and password = 'xx' OR 'x'='x'
+<br/>
+Calculating hash value for select * from login where username='test1' and password = 'xx' OR 'x'='x' Using SHA-256 
+<br/>
+Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+<br/>
+Hex format : abd8459b492b7de3cbc0466570dde2619efdb43a64275cf0ecb2baf6fbb17fe8
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack7()'><b>verifySecuredLoginwithTautologyAttack7</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1573814507" onClick='toggleBox("Output-1573814507", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1573814507" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1573814507">
+Verifying login with tautology attack with input ' OR 'ABCD' = 'ABC'+'D
+<br/>
+select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D'
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' = 'ABC'+'D' Using SHA-256 
+<br/>
+Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+<br/>
+Hex format : 66f4169c53c3501d23e2cb9d023aab6278765f64239ee78fdafe30188b727dbb
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack8()'><b>verifySecuredLoginwithTautologyAttack8</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1540388219" onClick='toggleBox("Output-1540388219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1540388219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1540388219">
+Verifying login with tautology attack with input ' OR 'ABCD' > 'A' -- 
+<br/>
+select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 'ABCD' > 'A' -- ' Using SHA-256 
+<br/>
+Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+<br/>
+Hex format : 7a0950f3b96932d5033ecd3c3c0ef70e598bbc8b2f78e51fbae9eb2cf8651cd1
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithTautologyAttack9()'><b>verifySecuredLoginwithTautologyAttack9</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-1109384532" onClick='toggleBox("Output-1109384532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1109384532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1109384532">
+Verifying login with tautology attack with input ' OR 'ABC' = N'ABC' -- 
+<br/>
+select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- '
+<br/>
+Calculating hash value for select * from login where username='test1' and password = '' OR 'ABC' = N'ABC' -- ' Using SHA-256 
+<br/>
+Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+<br/>
+Hex format : cb237db8ce64600dd45a533ab3bad6876553fc3851dcc6a58ecc24188e1d012c
+<br/>
+User not found in database, login failed
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+<tr>
+<td title='com.hijacking.dao.unsecured.SecuredVerifyLoginTest.verifySecuredLoginwithValidCredentials()'><b>verifySecuredLoginwithValidCredentials</b><br>Test class: com.hijacking.dao.unsecured.SecuredVerifyLoginTest<br/>
+<a href="#Output-899424987" onClick='toggleBox("Output-899424987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-899424987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-899424987">
+Verifying login with valid credentials, without any attack
+<br/>
+select * from login where username='test' and password = 'test'
+<br/>
+Calculating hash value for select * from login where username='test' and password = 'test' Using SHA-256 
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+Hex format : 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+User found in database,login success
+<br/>
+User Details : 
+<br/>
+Id : 9 Username test Hash 1c48df9e0d75979d68e32ad30fedc065bf12fe9182305adeaca0eafeed88a434
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.hijacking.dao.unsecured.SecuredVerifyLoginTest@5e3a8624</td></tr>
+</table><p>
+</body>
+</html>
